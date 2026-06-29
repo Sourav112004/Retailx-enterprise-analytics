@@ -36,3 +36,7 @@ RetailX Enterprise Analytics
 - **MySQL Workbench** – SQL development
 - **Python** – Data analysis
 - **Power BI** – Data visualization
+
+## 📖 Project Documentation
+
+- [Database Design Decisions](docs/Database_Design_Decisions.md)
