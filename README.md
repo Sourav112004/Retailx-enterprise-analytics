@@ -1,3 +1,7 @@
+## 📖 Project Documentation
+
+- [Database Design Decisions](docs/Database_Design_Decisions.md)
+
 # RetailX Enterprise Analytics
 
 A comprehensive retail analytics project covering database design, data analysis, and business intelligence reporting.
@@ -37,6 +41,4 @@ RetailX Enterprise Analytics
 - **Python** – Data analysis
 - **Power BI** – Data visualization
 
-## 📖 Project Documentation
 
-- [Database Design Decisions](docs/Database_Design_Decisions.md)
