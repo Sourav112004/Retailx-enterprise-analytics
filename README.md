@@ -1,4 +1,6 @@
+## 📖 Project Documentation
 
+- [Database Design Decisions](docs/Database_Design_Decisions.md)
 
 # RetailX Enterprise Analytics
 
