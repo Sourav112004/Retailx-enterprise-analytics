@@ -86,8 +86,8 @@ RetailX Enterprise Analytics
 | Primary & Foreign Keys       | Completed   |
 | Composite Key Design         | Completed   |
 | Data Profiling (Pandas)      | Completed   |
-| Data Import                  | In Progress |
-| Data Cleaning                | Pending     |
+| Data Import                  | Completed   |
+| Data Cleaning                | In Progress |
 | SQL Business Analysis        | Pending     |
 | Power BI Dashboards          | Pending     |
 
