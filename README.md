@@ -9,7 +9,7 @@ End-to-end Retail Analytics project demonstrating database design, data profilin
 | Document                                                       | Status      |
 | -------------------------------------------------------------- | ----------- |
 | [Database Design Decisions](docs/Database_Design_Decisions.md) | Available   |
-| Data Quality Report                                            | Coming Soon |
+| [Data Quality Report](docs/Data_Quality_Report.md)             | Available   |
 | ETL Process                                                    | Coming Soon |
 | ER Diagram                                                     | Coming Soon |
 
