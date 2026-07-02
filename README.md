@@ -87,8 +87,8 @@ RetailX Enterprise Analytics
 | Composite Key Design         | Completed   |
 | Data Profiling (Pandas)      | Completed   |
 | Data Import                  | Completed   |
-| Data Cleaning                | In Progress |
-| SQL Business Analysis        | Pending     |
+| Data Cleaning                | Completed   |
+| SQL Business Analysis        | In Progress |
 | Power BI Dashboards          | Pending     |
 
 ---
