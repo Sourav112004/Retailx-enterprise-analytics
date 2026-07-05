@@ -255,3 +255,238 @@ This analysis demonstrates that answering a business question extends beyond wri
 Rather than stopping after identifying the month with the lowest number of orders, additional investigations were performed to understand the underlying factors contributing to the result.
 
 By progressively exploring order status, payment information, customer details, seller information, and operational metrics, the analysis evolved from descriptive reporting into business-driven investigation, producing actionable recommendations for stakeholders.
+
+---
+
+# Business Case 3 – Monthly Average Order Value (AOV)
+
+## Business Question
+
+How has the Average Order Value (AOV) changed month-over-month?
+
+---
+
+## Business Objective
+
+Analyze monthly Average Order Value to understand customer purchasing behavior and identify factors influencing changes in order value over time.
+
+---
+
+## Analytical Thinking Process
+
+```text
+Business Question
+        ↓
+Understand the Business Objective
+        ↓
+Identify the Grain
+        ↓
+Identify the Metric
+        ↓
+Select the Required Tables
+        ↓
+Write SQL
+        ↓
+Interpret Results
+        ↓
+Ask "Why?"
+        ↓
+Investigate Root Cause
+        ↓
+Provide Business Recommendation
+```
+
+---
+
+## SQL Techniques Used
+
+- SUM()
+- COUNT(DISTINCT)
+- DATE_FORMAT()
+- GROUP BY
+- ORDER BY
+- INNER JOIN
+- AVG()
+- HAVING
+- Aggregate Functions
+
+---
+
+## Key Finding
+
+September 2016 recorded the lowest Average Order Value (AOV) of **₹89.12**.
+
+---
+
+# Root Cause Investigation
+
+## Investigation 1
+
+### Question
+
+Were lower-priced products responsible for the decline in AOV?
+
+### SQL Investigation
+
+Calculated the average selling price of products purchased each month.
+
+### Finding
+
+September 2016 contained relatively inexpensive products compared to other months, supporting the hypothesis that lower-priced products contributed to the reduced AOV.
+
+---
+
+## Investigation 2
+
+### Question
+
+Which product categories were purchased during September 2016?
+
+### SQL Investigation
+
+Identified all product categories sold during the month.
+
+### Finding
+
+The month primarily consisted of purchases from the following categories:
+
+- beleza_saude
+- moveis_decoracao
+- telefonia
+
+These categories exhibited relatively low average selling prices.
+
+---
+
+## Investigation 3
+
+### Question
+
+What was the average selling price for each product category?
+
+### SQL Investigation
+
+Calculated:
+
+- Average Product Price
+- Number of Orders
+
+for each product category.
+
+### Finding
+
+| Product Category | Average Price | Orders |
+|------------------|--------------:|-------:|
+| moveis_decoracao | ₹36.45 | 2 |
+| beleza_saude | ₹44.90 | 3 |
+| telefonia | ₹59.50 | 1 |
+
+The purchased categories consisted primarily of lower-priced products.
+
+---
+
+## Investigation 4
+
+### Question
+
+Did customers purchase fewer items per order?
+
+### SQL Investigation
+
+Created an order-level summary containing:
+
+- Order ID
+- Items per Order
+- Order Value
+
+### Finding
+
+| Items in Order | Observation |
+|---------------:|------------|
+| 2 | Moderate basket size |
+| 3 | Highest order value |
+| 1 | Single-item purchase |
+
+The analysis did not provide sufficient evidence to conclude that customers consistently purchased fewer items per order.
+
+Instead, the lower AOV appears to be influenced primarily by lower-priced products combined with a very small number of orders.
+
+---
+
+## Investigation 5
+
+### Question
+
+Could the low AOV be explained by sample size?
+
+### Finding
+
+September 2016 contained only **4 recorded orders**, making it the smallest monthly sample in the dataset.
+
+A small sample size can significantly influence KPI values and should be considered before drawing broader business conclusions.
+
+---
+
+# Business Insight
+
+The unusually low Average Order Value during September 2016 appears to be driven by a combination of:
+
+- Very small monthly order volume.
+- Relatively inexpensive product categories.
+- Low average selling prices.
+
+The available data does not provide sufficient evidence to conclude that customers consistently purchased fewer items per order.
+
+---
+
+# Business Recommendation
+
+1. Validate whether September 2016 represents a complete reporting period before making strategic business decisions, as the month contains a very small number of recorded orders.
+
+2. Promote higher-value product categories through targeted merchandising strategies to improve Average Order Value (AOV).
+
+3. Introduce cross-selling, upselling, or product bundling initiatives to encourage customers to increase the value of each order.
+
+4. Monitor Monthly Revenue, Monthly Orders, and Average Order Value together to determine whether the September decline is an isolated event or part of a recurring seasonal trend.
+
+5. Conduct additional customer and product-level analysis to identify purchasing patterns that contribute to lower order values and develop targeted business strategies based on those findings.
+
+---
+
+# Questions Raised
+
+This investigation generated several additional business questions for future analysis:
+
+- Which customers consistently generate the highest Average Order Value?
+- Which product categories contribute most to monthly revenue?
+- Which sellers consistently sell higher-value products?
+- Do specific customer segments purchase higher-value products?
+- Does Average Order Value vary significantly across different regions?
+- Are there seasonal purchasing patterns affecting Average Order Value?
+
+---
+
+# SQL Skills Demonstrated
+
+- Business KPI Analysis
+- Average Order Value Calculation
+- Root Cause Investigation
+- Multi-Table Joins
+- Aggregate Functions
+- Conditional Business Analysis
+- Product Category Analysis
+- Order-Level Analysis
+- Analytical Problem Solving
+- Business Recommendation Development
+
+---
+
+# Business Impact
+
+This case study demonstrates that KPI analysis extends beyond calculating a metric.
+
+Rather than stopping after identifying a low Average Order Value, multiple hypotheses were developed and validated through SQL-based investigations. Product pricing, product categories, order composition, and sample size were examined before arriving at an evidence-based conclusion.
+
+This structured approach transforms descriptive reporting into business-focused analysis, enabling stakeholders to understand not only **what happened**, but also the likely factors behind the observed results and the actions that should be considered.
+
+
