@@ -7,7 +7,7 @@
 | 1 | Monthly Revenue Trend | ✅ |
 | 2 | Monthly Order Trend | ✅ |
 | 3 | Monthly Average Order Value | ✅ |
-| 4 | Customer Lifetime Value | ⏳ |
+| 4 | Customer Lifetime Value | ✅ |
 | 5 | Repeat Customer Analysis | ⏳ |
 | 6 | Seller Performance | ⏳ |
 | 7 | Product Category Performance | ⏳ |
