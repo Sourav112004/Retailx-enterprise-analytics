@@ -500,6 +500,62 @@ This case study demonstrates that KPI analysis extends beyond calculating a metr
 
 Rather than stopping after identifying a low Average Order Value, multiple hypotheses were developed and validated through SQL-based investigations. Product pricing, product categories, order composition, and sample size were examined before arriving at an evidence-based conclusion.
 
+# Business Case 4 – Customer Lifetime Value Analysis
+
+## Business Question
+
+Which customers generate the highest lifetime value for the business, and what purchasing patterns distinguish them?
+
+---
+
+## Business Objective
+
+Identify high-value customers by analyzing lifetime revenue, purchase frequency and Average Order Value (AOV) to support customer retention and marketing strategies.
+
+---
+
+## SQL Techniques Used
+
+- INNER JOIN
+- SUM()
+- COUNT(DISTINCT)
+- GROUP BY
+- ORDER BY
+- Aggregate Functions
+- Customer Segmentation
+
+---
+
+## Key Findings
+
+- High-value customers generated significantly higher lifetime revenue.
+- Many customers placed only a single order throughout their lifetime.
+- Customers with the highest AOV were not necessarily those with the highest lifetime revenue.
+- Lifetime Revenue, Purchase Frequency and AOV each provide different business perspectives and should be analyzed together.
+
+---
+
+## Business Insight
+
+Customer value cannot be measured using a single KPI.
+
+Revenue identifies the highest-value customers.
+
+Order Frequency identifies the most loyal customers.
+
+Average Order Value identifies customers who spend the most per purchase.
+
+Analyzing these metrics together provides a more complete understanding of customer behavior.
+
+---
+
+## Business Recommendation
+
+- Reward high-value customers through loyalty programs.
+- Increase repeat purchases using personalized retention campaigns.
+- Target customers with high AOV but low purchase frequency.
+- Monitor Customer Lifetime Value regularly as a key business KPI.
+
 This structured approach transforms descriptive reporting into business-focused analysis, enabling stakeholders to understand not only **what happened**, but also the likely factors behind the observed results and the actions that should be considered.
 
 
