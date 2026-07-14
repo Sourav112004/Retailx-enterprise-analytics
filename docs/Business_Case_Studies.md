@@ -10,7 +10,7 @@
 | 4 | Customer Lifetime Value | ✅ |
 | 5 | Repeat Customer Analysis | ✅ |
 | 6 | Seller Performance | ✅ |
-| 7 | Product Category Performance | ⏳ |
+| 7 | Product Category Performance | ✅ |
 | 8 | Customer Retention | ⏳ |
 | 9 | Regional Sales Analysis | ⏳ |
 | 10 | Executive Business Dashboard | ⏳ |
