@@ -349,3 +349,121 @@ Successfully developed a category-level performance dashboard capable of measuri
 ## Sprint Outcome
 
 This sprint strengthened my understanding of seller analytics by combining SQL, business reasoning, and exploratory analysis. Beyond identifying top and bottom sellers, the focus shifted toward understanding *why* performance differs and how SQL can be used to answer strategic business questions rather than simply generate reports.
+
+# Sprint 3 Progress Report
+
+## Overview
+
+Sprint 3 focused on solving advanced business problems using SQL by applying window functions, multiple CTEs, business KPI calculations, and exploratory analysis. The objective was to move beyond writing SQL queries and begin solving real-world business questions similar to those faced by data analysts in production environments.
+
+---
+
+# Completed Business Case Studies
+
+## Case 05 – Repeat Customer Analysis
+
+### Objective
+Identify customers who made multiple purchases and measure repeat customer behavior.
+
+### SQL Concepts Used
+- CTEs
+- GROUP BY
+- HAVING
+- Aggregate Functions
+- Business KPI Calculation
+
+### Key Findings
+- Identified repeat customers across the marketplace.
+- Measured repeat purchase behavior.
+- Generated insights to support customer retention strategies.
+
+---
+
+## Case 06 – Seller Performance Analysis
+
+### Objective
+Evaluate seller performance based on revenue contribution and order volume.
+
+### SQL Concepts Used
+- CTEs
+- DENSE_RANK()
+- Window Functions
+- Running Totals
+- Revenue Contribution Analysis
+- Aggregate Functions
+
+### Key Findings
+- Ranked sellers by total revenue.
+- Calculated cumulative marketplace revenue.
+- Measured individual seller revenue contribution.
+- Investigated low-performing sellers and found that many had only one completed order, indicating opportunities for targeted marketing campaigns and increased product visibility.
+
+---
+
+## Case 07 – Product Category Performance Analysis
+
+### Objective
+Analyze product category performance and customer repeat purchasing behavior.
+
+### SQL Concepts Used
+- Multiple CTEs
+- CASE Statements
+- Aggregate Functions
+- Window Functions
+- Revenue Contribution Analysis
+
+### Key Findings
+- Identified top-performing product categories by revenue.
+- Calculated revenue contribution for each category.
+- Measured active customers and repeat customers by category.
+- Calculated Repeat Purchase Rate.
+- Generated insights for improving low-performing product categories.
+
+---
+
+## Case 08 – Customer Retention Analysis
+
+### Objective
+Measure month-over-month customer retention across the marketplace.
+
+### SQL Concepts Used
+- Multiple CTEs
+- LAG() Window Function
+- CASE Statements
+- Date Functions
+- Aggregate Functions
+- Business KPI Calculation
+
+### Key Findings
+- Built a Customer × Month dataset.
+- Identified customers purchasing in consecutive calendar months.
+- Calculated monthly active customers.
+- Measured retained customers.
+- Computed Monthly Retention Rate using previous month's active customers.
+- Learned advanced SQL debugging techniques involving CTE chaining, window functions, date arithmetic, and execution order.
+
+---
+
+# Skills Strengthened
+
+- Advanced SQL
+- Multiple CTE Design
+- Window Functions
+- LAG()
+- DENSE_RANK()
+- Business KPI Development
+- Customer Analytics
+- Seller Analytics
+- Product Analytics
+- Retention Analytics
+- Exploratory Data Analysis
+- SQL Debugging
+- Business Insight Generation
+
+---
+
+# Sprint Outcome
+
+Sprint 3 marked a transition from writing SQL queries to solving real business problems. The analyses focused on business decision-making by measuring customer behavior, seller performance, product performance, and customer retention using production-style SQL techniques.
+
+These case studies significantly strengthened practical SQL skills while improving the ability to translate business requirements into analytical solutions.
