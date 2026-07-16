@@ -467,3 +467,23 @@ Measure month-over-month customer retention across the marketplace.
 Sprint 3 marked a transition from writing SQL queries to solving real business problems. The analyses focused on business decision-making by measuring customer behavior, seller performance, product performance, and customer retention using production-style SQL techniques.
 
 These case studies significantly strengthened practical SQL skills while improving the ability to translate business requirements into analytical solutions.
+
+## Case 09 – Product Category Review Analysis
+
+### Objective
+Evaluate customer satisfaction across product categories using customer review data.
+
+### SQL Concepts Used
+- Multiple CTEs
+- Aggregate Functions
+- CASE Statements
+- GROUP BY
+- Multiple Table Joins
+- Business KPI Calculation
+
+### Key Findings
+- Calculated average review score for each product category.
+- Measured total reviews and total orders.
+- Identified categories receiving the highest number of 5-star reviews.
+- Identified categories generating the highest number of 1-star reviews.
+- Learned the importance of data grain and discovered why Review Coverage could not be accurately calculated due to reviews being stored at the order level while the analysis was performed at the product category level.
