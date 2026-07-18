@@ -487,3 +487,50 @@ Evaluate customer satisfaction across product categories using customer review d
 - Identified categories receiving the highest number of 5-star reviews.
 - Identified categories generating the highest number of 1-star reviews.
 - Learned the importance of data grain and discovered why Review Coverage could not be accurately calculated due to reviews being stored at the order level while the analysis was performed at the product category level.
+
+
+## Sprint 3 Progress Update 
+
+### Objective
+Transition from one-time SQL analysis to a reusable analytics architecture by creating business KPI views for delivery performance analysis.
+
+### Completed
+
+#### Delivery Performance Analysis
+- Designed a state-level delivery performance analysis.
+- Calculated Delivered Order Count.
+- Calculated Late Order Count.
+- Computed Late Delivery Rate (%).
+- Calculated Average Delivery Time using `DATEDIFF()`.
+- Defined late deliveries based on actual vs. estimated delivery dates.
+
+#### Reusable SQL Views
+Created reusable reporting views to avoid rewriting KPI calculations.
+
+**Views Developed**
+- `vw_delivery_performance`
+  - Delivered Order Count
+  - Late Order Count
+  - Late Delivery Rate
+  - Average Delivery Time
+
+- `vw_seller_network`
+  - Unique Seller Count by Customer State
+
+#### Business Investigation
+- Investigated delivery performance across customer states.
+- Measured seller network coverage for each state.
+- Connected seller availability with delivery performance metrics.
+- Built a modular investigation workflow by joining reusable KPI views instead of rewriting complex SQL queries.
+
+### Key SQL Concepts Learned
+- Converting CTE-based analysis into reusable SQL Views.
+- Designing business KPIs at a consistent aggregation level.
+- Separating business logic from presentation logic.
+- Building reusable reporting layers for future analysis.
+- Using `COUNT(DISTINCT)` for network coverage analysis.
+- Understanding when to use `WHERE` vs. `HAVING`.
+- Structuring SQL for scalable analytics projects.
+
+### Outcome
+Sprint 3 evolved from writing standalone SQL queries to building a reusable analytics layer. The project now follows a modular reporting approach where KPI views can be reused across multiple business investigations, improving maintainability and aligning with real-world BI development practices.
