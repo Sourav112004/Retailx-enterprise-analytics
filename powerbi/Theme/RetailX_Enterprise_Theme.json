@@ -1,1 +1,89 @@
 
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/theme/v1.0.0/schema.json",
+  "name": "RetailX Premium Enterprise",
+  "foreground": "#1E293B",
+  "background": "#F7F8FA",
+  "tableAccent": "#2563EB",
+  "good": "#22C55E",
+  "neutral": "#F59E0B",
+  "bad": "#EF4444",
+  "dataColors": [
+    "#2563EB",
+    "#38BDF8",
+    "#22C55E",
+    "#F59E0B",
+    "#A855F7",
+    "#0F172A",
+    "#EF4444",
+    "#64748B"
+  ],
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 24,
+      "color": "#1E293B"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 16,
+      "color": "#1E293B"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 30,
+      "color": "#1E293B"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 11,
+      "color": "#64748B"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{
+          "show": true,
+          "color": { "solid": { "color": "#FFFFFF" } },
+          "transparency": 0
+        }],
+        "title": [{
+          "show": true,
+          "fontFamily": "Segoe UI Semibold",
+          "fontSize": 14,
+          "color": { "solid": { "color": "#1E293B" } }
+        }],
+        "labels": [{
+          "fontSize": 11,
+          "color": { "solid": { "color": "#64748B" } }
+        }],
+        "categoryLabels": [{
+          "fontSize": 11,
+          "color": { "solid": { "color": "#64748B" } }
+        }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{
+          "fontSize": 12,
+          "color": { "solid": { "color": "#64748B" } }
+        }],
+        "calloutValue": [{
+          "fontSize": 30,
+          "color": { "solid": { "color": "#1E293B" } }
+        }]
+      }
+    },
+    "page": {
+      "*": {
+        "wallpaper": [{
+          "color": { "solid": { "color": "#F7F8FA" } },
+          "transparency": 0
+        }]
+      }
+    }
+  }
+}
+
