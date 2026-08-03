@@ -89,8 +89,8 @@ RetailX Enterprise Analytics
 | Data Profiling (Pandas)      | Completed   |
 | Data Import                  | Completed   |
 | Data Cleaning                | Completed   |
-| SQL Business Analysis        | In Progress |
-| Power BI Dashboards          | Pending     |
+| SQL Business Analysis        | Completed   |
+| Power BI Dashboards          | Completed   |
 
 ---
 
