@@ -1,4 +1,4 @@
-# 💼 RetailX Business Questions
+#RetailX Business Questions
 
 ## Executive Overview
 
