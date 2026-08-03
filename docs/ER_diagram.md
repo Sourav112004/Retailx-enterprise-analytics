@@ -1,4 +1,4 @@
-# 🗺️ Entity Relationship (ER) Diagram
+#  Entity Relationship (ER) Diagram
 
 ## Overview
 
